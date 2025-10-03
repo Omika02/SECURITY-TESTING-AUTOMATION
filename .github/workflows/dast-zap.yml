@@ -1,0 +1,6 @@
+# ZAP rules file used by zap-baseline or zap-full-scan to filter or change thresholds
+# See ZAP docs for exact rule syntax — this is an example to suppress a known false positive.
+ignore:
+- name: "Some Known FP"
+alert: "X-Content-Type-Options Header Missing"
+url: ".*internal-only-stub.*"
